@@ -7,7 +7,6 @@ import lombok.experimental.Accessors;
 
 @Data
 @Accessors(fluent = true)
-@JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
 public class User {
 
     private String name;

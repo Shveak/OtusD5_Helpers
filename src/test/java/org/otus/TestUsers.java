@@ -1,7 +1,6 @@
 package org.otus;
 
 import com.consol.citrus.annotations.CitrusTest;
-import com.consol.citrus.context.TestContext;
 import com.consol.citrus.message.MessageType;
 import com.consol.citrus.testng.TestNGCitrusSupport;
 import com.google.gson.Gson;
@@ -19,7 +18,7 @@ import java.util.stream.LongStream;
 
 import static com.consol.citrus.http.actions.HttpActionBuilder.http;
 
-public class TestHelpers extends TestNGCitrusSupport {
+public class TestUsers extends TestNGCitrusSupport {
 
     @Test(description = "Проверяем endpoint '/user' с условленным параметром 'mock'.")
     @CitrusTest
