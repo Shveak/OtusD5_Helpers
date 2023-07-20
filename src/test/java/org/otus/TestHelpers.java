@@ -21,9 +21,7 @@ import static com.consol.citrus.http.actions.HttpActionBuilder.http;
 
 public class TestHelpers extends TestNGCitrusSupport {
 
-    private TestContext context;
-
-    @Test(description = "Проверяем endpoint '/user' с условленным параметром 'mock'")
+    @Test(description = "Проверяем endpoint '/user' с условленным параметром 'mock'.")
     @CitrusTest
     public void getTestUserMock() {
 
@@ -37,14 +35,11 @@ public class TestHelpers extends TestNGCitrusSupport {
                 .response(HttpStatus.OK)
                 .message()
                 .type(MessageType.JSON)
-                .body("{\n" +
-                        "    \"name\": \"Заглушка\",\n" +
-                        "    \"score\": 555\n" +
-                        "}")
+                .body("{\n\"name\": \"Заглушка\",\n\"score\": 555\n}")
         );
     }
 
-    @Test(description = "Проверяем endpoint '/user' с отсутсвующим пользователем")
+    @Test(description = "Проверяем endpoint '/user' с отсутсвующим пользователем.")
     @CitrusTest
     public void getTestUserMockError() {
 
@@ -66,7 +61,7 @@ public class TestHelpers extends TestNGCitrusSupport {
         );
     }
 
-    @Test(description = "Проверяем endpoint '/user'. Список всех пользователей. ")
+    @Test(description = "Проверяем endpoint '/user'. Список всех пользователей.")
     @CitrusTest
     public void getTestUserAll() {
 
@@ -84,7 +79,7 @@ public class TestHelpers extends TestNGCitrusSupport {
         );
     }
 
-    @Test(description = "Проверяем endpoint '/user'. Рейтинг пользователя. ")
+    @Test(description = "Проверяем endpoint '/user'. Рейтинг пользователя.")
     @CitrusTest
     public void getTestUserRating() {
 
